@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jamboju Siddartha — Portfolio</title>
+  <meta name="description" content="Portfolio of Jamboju Siddartha — B.Tech Data Science student" />
+  <style>
+    :root{
+      --accent:#0f62fe;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f5f7fb;
+      --glass: rgba(255,255,255,0.7);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:#0f1724;line-height:1.45}
+    .container{max-width:1000px;margin:36px auto;padding:20px}
+
+    /* Header */
+    header{display:flex;align-items:center;gap:18px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo .mark{width:46px;height:46px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),#7c3aed);color:white;font-size:18px}
+    .hero{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:22px;border-radius:14px;background:var(--glass);box-shadow:0 6px 20px rgba(16,24,40,0.06);align-items:center}
+    .profile-photo{width:120px;height:120px;border-radius:12px;object-fit:cover;border:4px solid white;box-shadow:0 6px 18px rgba(15,98,254,0.08)}
+    h1{margin:0;font-size:24px}
+    .sub{color:var(--muted);margin-top:6px}
+    .contact{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .chip{background:#ffffff;padding:8px 12px;border-radius:999px;border:1px solid #e6eef9;font-size:14px}
+
+    /* Layout */
+    main{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(16,24,40,0.04)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+    h2{margin:0 0 10px 0;font-size:18px}
+    ul{margin:0;padding-left:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:8px 12px;border-radius:8px;border:1px solid #eef2ff;background:#fbfdff}
+
+    .projects .project{margin-bottom:12px}
+    .projects .meta{color:var(--muted);font-size:13px;margin-top:6px}
+
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
+
+    /* responsive */
+    @media (max-width:720px){
+      .hero{grid-template-columns:88px 1fr}
+      .grid-2{grid-template-columns:1fr}
+      .profile-photo{width:88px;height:88px}
+    }
+
+    /* small utilities */
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-outline{border:1px solid #e6eef9}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">Lovable</div>
+        <div>
+          <div style="font-size:13px;color:var(--muted);">Portfolio</div>
+          <div style="font-weight:700">Jamboju Siddartha</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero card" aria-labelledby="hero-title">
+      <!-- Replace 'profile.jpg' with your actual photo filename (you said you'll provide it) -->
+      <img id="profile-photo" class="profile-photo" src="profile.jpg" alt="Jamboju Siddartha — profile photo">
+      <div>
+        <h1 id="hero-title">Jamboju Siddartha</h1>
+        <div class="sub">B.Tech — Data Science (Ongoing) | Aspiring to gain real-world experience</div>
+
+        <div class="contact">
+          <a class="chip" href="mailto:siddarthacharyj@gmail.com">siddarthacharyj@gmail.com</a>
+          <span class="chip">Phone: 8106184256</span>
+          <a class="chip" href="https://www.linkedin.com/in/siddartha-chary-486a15344" target="_blank" rel="noopener">LinkedIn profile</a>
+        </div>
+
+        <div style="margin-top:12px">
+          <a class="btn btn-primary" href="mailto:siddarthacharyj@gmail.com?subject=Portfolio%20Contact">Contact Me</a>
+          <a class="btn btn-outline" href="#projects" style="margin-left:10px">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="card">
+        <h2>Career Objective</h2>
+        <p>Aspiring to gain real-world experience to build a strong foundation for my future career. Dedicated to delivering my best efforts in any environment, striving for excellence and growth.</p>
+      </section>
+
+      <div class="grid-2">
+        <section class="card">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <strong>B.Tech in Data Science</strong> (Ongoing) — Mallareddy University, Maisammaguda, Telangana<br>
+              SGPA: 8.00 (1st Sem), 7.71 (2nd Sem), 8.56 (3rd Sem) | Overall CGPA: 8.15
+            </li>
+            <li style="margin-top:10px">
+              <strong>Intermediate (10+2)</strong> — SR Srigayatri Junior College, Hyderabad, Telangana<br>
+              Marks: 960 (Board Exams)
+            </li>
+            <li style="margin-top:10px">
+              <strong>10th Grade</strong> — Krishnaveni High School, Hyderabad, Telangana<br>
+              GPA: 10/10
+            </li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Technical Skills</h2>
+          <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">C++</div>
+            <div class="skill">Django</div>
+            <div class="skill">Spring Boot</div>
+          </div>
+
+          <h2 style="margin-top:16px">Hobbies & Interests</h2>
+          <p class="sub">Learning programming, watching movies, exploring new ideas. Interested in enhancing skills and gaining hands-on experience in practical projects.</p>
+        </section>
+      </div>
+
+      <section id="projects" class="card projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <strong>ShopX — Ecommerce Website</strong>
+          <div class="meta">Technologies: Python and Java (separate implementations)</div>
+        </div>
+
+        <div class="project">
+          <strong>Temple Tranquil</strong>
+          <div class="meta">Pilgrimage website — Technologies: Django & Python</div>
+        </div>
+
+        <div class="project">
+          <strong>Shopping Cart Management System</strong>
+          <div class="meta">Developed using Python</div>
+        </div>
+
+        <div class="project">
+          <strong>One Health — Health Monitoring System</strong>
+          <div class="meta">Developed using Spring Boot</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Resume</h2>
+        <p>If you'd like, I can add a downloadable resume button here — upload your resume file (PDF) and I'll wire it up.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>Built by Jamboju Siddartha • Email: <a href="mailto:siddarthacharyj@gmail.com">siddarthacharyj@gmail.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
